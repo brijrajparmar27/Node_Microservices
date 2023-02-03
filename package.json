@@ -1,0 +1,16 @@
+{
+  "name": "microservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd Food && npm run dev\" \"cd Movies && npm run dev\" \"cd Gateway && npm run dev\"",
+    "install": "concurrently \"cd Food && npm i\" \"cd Movies && npm i\" \"cd Gateway && npm i\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
